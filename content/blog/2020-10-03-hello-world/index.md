@@ -1,7 +1,6 @@
 ---
 title: Hello World
 date: "2020-10-03"
-description: "Hello World: a new blog"
 ---
 
 This is my first post on my new blog! On this blog I will post all sorts of things that come to my mind: from a tutorial for some problem I've come across to a technology review.
