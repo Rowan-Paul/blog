@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `RPF Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Rowan Paul Flynn`,
+      summary: `who lives in the Netherlands and codes things that sometimes work.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A blog about whatever I think of.`,
+    siteUrl: `https://blog.rowanpaulflynn.com/`,
     social: {
-      twitter: `kylemathews`,
+      github: `rowan-paul`,
     },
   },
   plugins: [
