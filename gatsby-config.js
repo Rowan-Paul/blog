@@ -65,7 +65,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#0e141b`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `content/assets/profile-pic.png`,
       },
     },
