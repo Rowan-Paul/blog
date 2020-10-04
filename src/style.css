@@ -54,12 +54,12 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #ffffff;
-  --color-text-light: #4f5969;
-  --color-heading: #ffffff;
-  --color-heading-black:#ffffff;
-  --color-accent: #0e141b;
+  --color-primary: #6387B0;
+  --color-text: #D2DDE9;
+  --color-text-light: #E9EEF4;
+  --color-heading: #D2DDE9  ;
+  --color-heading-black: #90A9C7;
+  --color-accent: #6387B0;
 }
 
 /* HTML elements */
@@ -71,18 +71,17 @@
 }
 
 html {
+  background-color: #010B13;
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
-  background-color: var(--color-accent);
 }
 
 footer {
