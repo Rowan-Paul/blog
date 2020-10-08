@@ -15,7 +15,7 @@ It was quite easy to do except... it didn't seem to do anything! It would still 
 
 Until I disabled microphone access trough Windows while also disabling the hands-free version of the device. This worked, but felt a like a bad solution because it would simply mean I couldn't use a microphone and these headsets.
 
-![Sound Control Panel](./sound-control-panel.png)
+![Sound Control Panel](sound-control-panel.png)
 
 A day later I found an obscure post somewhere talking about communications devices and how they are different than microphones in Windows settings. This, it turned out, was my golden ticket. I went into Sound Control Panel, right-clicked my laptop microphone and clicked "Set as default communication device".
 
