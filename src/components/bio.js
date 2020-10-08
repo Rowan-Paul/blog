@@ -56,7 +56,7 @@ const Bio = () => {
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://github.com/${social?.github || ``}`}>
-            You should follow them on GitHub
+            Follow me on GitHub
           </a>
         </p>
       )}
