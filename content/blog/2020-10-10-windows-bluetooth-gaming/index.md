@@ -1,6 +1,6 @@
 ---
 title: Windows Bluetooth Audio
-date: "2020-10-03"
+date: "2020-10-10"
 ---
 
 Last week I got new bluetooth headphones, the [Oneplus Bullets Wireless Z](https://www.oneplus.com/nl/product/oneplus-bullets-wireless-z) to be exact. I really like them, but when using it on Windows they sometimes freak out and stop playing sound.
