@@ -44,7 +44,7 @@ _The soundtrack is great, always have the radio on while driving_
 
 - [ ] Kids
 - [ ] Teens
-      ☑ Adults
+- [x] Adults
 - [ ] All
 
 ## PC Requirements
