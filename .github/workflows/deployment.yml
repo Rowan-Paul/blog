@@ -8,9 +8,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     strategy:
       matrix:
         node: [ '15.x' ]
+
     name: Gatsby build
     steps:
       - uses: actions/checkout@v2
@@ -19,4 +21,4 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
-      - run: gatsby build
+      - run: npm run build
