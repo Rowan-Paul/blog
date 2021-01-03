@@ -1,16 +1,16 @@
 ---
-title: Planet Zoo Review
-description: A review of Planet Zoo.
-date: "2020-12-30"
+title: Rimworld Review
+description: A review of Rimworld.
+date: "2021-01-03"
 ---
 
-**Very much a continuation of Planet Coaster, which I liked quite a bit. Been playing the Career parks and having a blast so far. Animals look pretty good, but still has quite some time before it reaches that Zoo Tycoon 2 level**
+**One of those base builders where youo can just get lost in for hours. Trying your best to manage your colonists, animals while also trying to achieve your own goals can get a little bit chaotic. This is just a great game to sit back and relax while trying to stop one of your colonists sets everything on fire.**
 
 ## Graphics
 
 - [ ] You forget what reality is
-- [x] **Beautiful**
-- [ ] Good
+- [ ] Beautiful
+- [x] **Good**
 - [ ] Decent
 - [ ] Bad
 - [ ] Don‘t look too long at it
@@ -28,31 +28,31 @@ date: "2020-12-30"
 ## Audio
 
 - [ ] Eargasm
-- [ ] Very good
-- [x] **Good**
+- [x] **Very good**
+- [ ] Good
 - [ ] Not too bad
 - [ ] Bad
 - [ ] I'm now deaf
 
-_Animals sound very real, soundtrack is fitting but i've already put on some of my own music instead of it_
+_Great soundtrack, really fits the game well._
 
 ## Audience
 
 - [ ] Kids
 - [ ] Teens
-- [ ] Adults
-- [x] **All**
+- [x] **Adults**
+- [ ] All
 
 ## PC Requirements
 
 - [ ] Check if you can run paint
-- [ ] Potato
-- [x] **Decent**
+- [x] **Potato**
+- [ ] Decent
 - [ ] Fast
 - [ ] Rich boi
 - [ ] Ask NASA if they have a spare computer
 
-_Everything on low, getting around 15 fps on my integrated graphics._
+_Hitting that 60 fps quite often on my potato_
 
 ## Difficulity
 
@@ -81,8 +81,6 @@ _Everything on low, getting around 15 fps on my integrated graphics._
 - [ ] Lovely
 - [ ] It‘ll replace your life
 
-_Career missions have voice over and some story_
-
 ## Game Time
 
 - [ ] Long enough for a cup of coffee
@@ -90,8 +88,6 @@ _Career missions have voice over and some story_
 - [ ] Average
 - [ ] Long
 - [x] **To infinity and beyond**
-
-_It took me 10 houors to complete the first 4 career missions, but of course there's freeplay which makes it quite infinite_
 
 ## Price
 
@@ -101,14 +97,12 @@ _It took me 10 houors to complete the first 4 career missions, but of course the
 - [ ] Not recommended
 - [ ] You could also just burn your money
 
-_Without the DLC, it's 22€ right now, definitly worth it to me_
-
 ## Bugs
 
-- [ ] Never heard of
-- [x] **Minor bugs**
+- [x] **Never heard of**
+- [ ] Minor bugs
 - [ ] Can get annoying
 - [ ] ARK: Survival Evolved
 - [ ] The game itself is a big terrarium for bugs
 
-_Sometimes your staff doesn't know where to go and animals can glitch out a bit_
+_Haven't come across a single bug in my 13 hours playing_

@@ -8,7 +8,7 @@ date: "2020-12-30"
 
 ## Graphics
 
-- [x] You forget what reality is
+- [x] **You forget what reality is**
 - [ ] Beautiful
 - [ ] Good
 - [ ] Decent
@@ -22,7 +22,7 @@ _This game looks amazing, even without Ray Tracing. Truly next-gen (see: all the
 
 - [ ] Very good
 - [ ] Good
-- [x] It‘s just gameplay
+- [x] **It‘s just gameplay**
 - [ ] Mehh
 - [ ] Watch paint dry instead
 - [ ] Just don't
@@ -31,7 +31,7 @@ _Driving kinda broke, use a motorcycle_
 
 ## Audio
 
-- [x] Eargasm
+- [x] **Eargasm**
 - [ ] Very good
 - [ ] Good
 - [ ] Not too bad
@@ -44,7 +44,7 @@ _The soundtrack is great, always have the radio on while driving_
 
 - [ ] Kids
 - [ ] Teens
-- [x] Adults
+- [x] **Adults**
 - [ ] All
 
 ## PC Requirements
@@ -54,7 +54,7 @@ _The soundtrack is great, always have the radio on while driving_
 - [ ] Decent
 - [ ] Fast
 - [ ] Rich boi
-- [x] Ask NASA if they have a spare computer
+- [x] **Ask NASA if they have a spare computer**
 
 _Using Nvidia Geforce Now, I get around 40-60 fps on Ultra, raytracing takes about another 10 off of there_
 
@@ -63,7 +63,7 @@ _Using Nvidia Geforce Now, I get around 40-60 fps on Ultra, raytracing takes abo
 - [ ] Just press 'W'
 - [ ] Easy
 - [ ] Significant brain usage
-- [x] Easy to learn / Hard to master
+- [x] **Easy to learn / Hard to master**
 - [ ] Difficult
 - [ ] Dark Souls
 
@@ -71,7 +71,7 @@ _Using Nvidia Geforce Now, I get around 40-60 fps on Ultra, raytracing takes abo
 
 - [ ] Nothing to grind
 - [ ] Only if u care about leaderboards/ranks
-- [x] Isn't necessary to progress
+- [x] **Isn't necessary to progress**
 - [ ] Average grind level
 - [ ] Too much grind
 - [ ] You‘ll need a second live for grinding
@@ -83,7 +83,7 @@ _Using Nvidia Geforce Now, I get around 40-60 fps on Ultra, raytracing takes abo
 - [ ] Average
 - [ ] Good
 - [ ] Lovely
-- [x] It‘ll replace your life
+- [x] **It‘ll replace your life**
 
 _Main story pretty good, sidequests are even better_
 
@@ -92,7 +92,7 @@ _Main story pretty good, sidequests are even better_
 - [ ] Long enough for a cup of coffee
 - [ ] Short
 - [ ] Average
-- [x] Long
+- [x] **Long**
 - [ ] To infinity and beyond
 
 _First playthrough took me 38 hours, second took me 36_
@@ -100,7 +100,7 @@ _First playthrough took me 38 hours, second took me 36_
 ## Price
 
 - [ ] It’s free!
-- [x] Worth the price
+- [x] **Worth the price**
 - [ ] If u have some spare money left
 - [ ] Not recommended
 - [ ] You could also just burn your money
@@ -109,7 +109,7 @@ _First playthrough took me 38 hours, second took me 36_
 
 - [ ] Never heard of
 - [ ] Minor bugs
-- [x] Can get annoying
+- [x] **Can get annoying**
 - [ ] ARK: Survival Evolved
 - [ ] The game itself is a big terrarium for bugs
 
