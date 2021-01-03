@@ -22,3 +22,10 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm run build
+      - name: deploy
+        uses: ./
+        with:
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          pages_directory: public
+          remote_url: https://github.com/appleboy/gh-pages-action.git
