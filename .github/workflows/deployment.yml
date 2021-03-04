@@ -28,3 +28,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: blog.rowanpaulflynn.com
+          user_name: 'Emma[bot]'
+          user_email: 'emma[bot]@users.noreply.github.com'
