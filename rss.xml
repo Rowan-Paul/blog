@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RPF Blog]]></title><description><![CDATA[A blog about whatever I think of.]]></description><link>https://blog.rowanpaulflynn.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 May 2021 11:20:19 GMT</lastBuildDate><item><title><![CDATA[Oneplus Bullets Wireless Z Review]]></title><description><![CDATA[On the 27th of September I decided I had once again had enough of my wired headphones breaking every month or so. My solution: buy a set of…]]></description><link>https://blog.rowanpaulflynn.com/2021-05-01-oneplus-bullets-z/</link><guid isPermaLink="false">https://blog.rowanpaulflynn.com/2021-05-01-oneplus-bullets-z/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;On the 27th of September I decided I had once again had enough of my wired headphones breaking every month or so. My solution: buy a set of wireless headphones. In the end I choose the OnePlus Bullets Wireless Z, a pair of wireless wired in-ear headphones. Especially the advertised 10 minutes charging for 10 hours of audio convinced me.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RPF Blog]]></title><description><![CDATA[A blog about whatever I think of.]]></description><link>https://blog.rowanpaulflynn.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Jul 2021 08:04:05 GMT</lastBuildDate><item><title><![CDATA[How to setup nginx and pm2 for React & node]]></title><description><![CDATA[This tutorial assumes you already have a working Ubuntu VPS with the repositories downloaded to it, specifically in the var/www folder. Also…]]></description><link>https://blog.rowanpaulflynn.com/2021-07-01/</link><guid isPermaLink="false">https://blog.rowanpaulflynn.com/2021-07-01/</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;This tutorial assumes you already have a working Ubuntu VPS with the repositories downloaded to it, specifically in the var/www folder. Also that you have your server setup to serve your React app, have setup your mongodb. I might make another tutorial for getting your repository on your VPS with SSH and GitHub Actions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;With this tutorial you will learn how to deploy a React app which is being served by a node.js backend server connected to a mongodb database.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First we’re going to install node, npm, nginx and nano. The second &lt;code class=&quot;language-text&quot;&gt;npm -v&lt;/code&gt; command lets you check the npm version (and checking if it installed at all).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd ~
+curl -sL https://deb.nodesource.com/setup_15.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+nodejs -v&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install npm
+npm -v
+sudo apt-get install nginx
+sudo apt install nano&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After installing these programs you can now install PM2, a process manager that will keep our server running 24/7.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install -g pm2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we setup nginx, which will point your server to the server PM2 runs. Replace domain(.com) with your domain and pay attention to the port that you host your server on. We then simply do a validation check on the file and restart nginx to let the changes take effect.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd /etc/nginx/sites-available
+nano default
+
+# copy paste this into default
+map $http_upgrade $connection_upgrade {
+    default         upgrade;
+    &amp;#39;&amp;#39;              close;
+}
+server {
+
+       server_name domain.com www.domain.com;
+
+       location / {
+        # Backend nodejs server
+        proxy_pass         http://127.0.0.1:3000;
+        proxy_http_version  1.1;
+        proxy_set_header    Upgrade     $http_upgrade;
+        proxy_set_header    Connection  $connection_upgrade;
+    }
+}
+
+# test if the configuration is correct
+nginx -t
+
+# restart nginx
+systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then we can install the HTTPS certificates so that your site gets that (green) lock icon (you should do this even if you don’t have any user input).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install snapd
+sudo snap install --classic certbot
+cd /
+certbot --nginx -d domain.com -d www.domain.com
+systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally, you can start the PM2 by navigating to your server folder and starting the server which has a app.js file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd var/www/backend
+pm2 start app.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Oneplus Bullets Wireless Z Review]]></title><description><![CDATA[On the 27th of September I decided I had once again had enough of my wired headphones breaking every month or so. My solution: buy a set of…]]></description><link>https://blog.rowanpaulflynn.com/2021-05-01-oneplus-bullets-z/</link><guid isPermaLink="false">https://blog.rowanpaulflynn.com/2021-05-01-oneplus-bullets-z/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;On the 27th of September I decided I had once again had enough of my wired headphones breaking every month or so. My solution: buy a set of wireless headphones. In the end I choose the OnePlus Bullets Wireless Z, a pair of wireless wired in-ear headphones. Especially the advertised 10 minutes charging for 10 hours of audio convinced me.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The headphones are quite light, only weighing 28 grams in total (according to the specification from OnePlus). When I had them on I would barely notice them and they blended in quite nice. I would usually use them 8 to 10 hours a day, sometimes even more and never had any problems with their fitting or weight.&lt;/p&gt;
 &lt;p&gt;The only thing I would be bothered by is the inexplicable blinking light on the controls when the headphones are connected. This became quite the thing when I was walking around at night and it would just keep blinking every few seconds.&lt;/p&gt;
 &lt;p&gt;Now onto the battery, the main reason I bought these headphones. It’s amazing. Really, it really is amazing. They charge by USB-C (love it!) and when I used my phone charger I would only need to charge in the morning for like 10 minutes each day of video lessons. That does bring me to another issue: there is no brick inside the package, only a small charging cable. This can be a bit annoying when you don’t have a fast charger yourself. More on the charger situation later.&lt;/p&gt;
